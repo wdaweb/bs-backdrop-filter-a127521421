@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Hello, world!</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: url('./images/1920_1080.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        @media (min-width: 577px) {
+            .col-md {
+                flex-basis: auto;
+                flex-grow: 0;
+                flex-shrink: 0;
+                min-width: 0;
+                max-width: 100%;
+            }
+
+            .flex-nowrap {
+                flex-wrap: nowrap !important
+            }
+
+            .h95 {
+                height: 95vh;
+            }
+
+            .fs50 {
+                font-size: 50px
+            }
+
+            .box {
+                width: 400px;
+                height: 500px;
+                border: 1px solid white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        @media(max-width: 576px) {
+            .col-md {
+                flex-basis: 100%;
+                flex-grow: 0;
+                flex-shrink: 0;
+                min-width: 0;
+                max-width: 100%;
+            }
+
+            .flex-nowrap {
+                flex-wrap: wrap !important
+            }
+
+            .h95 {
+                height: auto;
+            }
+
+            .fs50 {
+                font-size: 30px;
+            }
+
+            .box {
+                width: 400px;
+                height: 200px;
+                border: 1px solid white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+
+
+        #bf1 {
+            backdrop-filter: none
+        }
+
+        #bf2 {
+            backdrop-filter: grayscale(1)
+        }
+
+        #bf3 {
+            backdrop-filter: brightness(1.5)
+        }
+
+        #bf4 {
+            backdrop-filter: blur(5px)
+        }
+
+        #bf5 {
+            backdrop-filter: contrast(0.8)
+        }
+
+        #bf6 {
+            backdrop-filter: invert(0.7)
+        }
+
+        #bf7 {
+            backdrop-filter: opacity(0.4)
+        }
+
+        #bf8 {
+            backdrop-filter: sepia(0.4)
+        }
+
+        #bf9 {
+            backdrop-filter: saturate(1.8)
+        }
+
+        #bf10 {
+            backdrop-filter: hue-rotate(120deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap h95">
+            <div class="col-md box align-self-center fs50">
+                <span>backdrop-filter效果</span>
+            </div>
+            <div class="col-md box align-self-center" id="bf1">backdrop-filter: none</div>
+            <div class="col-md box align-self-center" id="bf2">backdrop-filter: grayscale(1)</div>
+            <div class="col-md box align-self-center" id="bf3">backdrop-filter: brightness(1.5)</div>
+            <div class="col-md box align-self-center" id="bf4">backdrop-filter: blur(5px)</div>
+            <div class="col-md box align-self-center" id="bf5">backdrop-filter: contrast(0.8)</div>
+            <div class="col-md box align-self-center" id="bf6">backdrop-filter: invert(0.7)</div>
+            <div class="col-md box align-self-center" id="bf7">backdrop-filter: opacity(0.4)</div>
+            <div class="col-md box align-self-center" id="bf8">backdrop-filter: sepia(0.4)</div>
+            <div class="col-md box align-self-center" id="bf9">backdrop-filter: saturate(1.8)</div>
+            <div class="col-md box align-self-center" id="bf10">backdrop-filter: hue-rotate(120deg)</div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
